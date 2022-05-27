@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.main{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.main2{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+   width: 200px;
+   height: 200px;
+   margin: 40px;
+   background-color: rgb(206, 119, 13);
+}
+.minibox{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    transition: all 3s;
+}
+p{
+    font-size: small;
+    text-transform: capitalize;
+}
+.box:hover > #a{
+    transform: rotate(360deg);
+}
+
+.box:hover > #b{
+    width: 90%;
+    transform: rotateX(360deg);
+}
+.box:hover > #c{
+    height: 90%;
+    transform: rotateY(360deg);
+
+}
+.box:hover > #d{
+    height: 90%;
+    width: 90%;
+    transform: rotateZ(360deg);
+    
+
+}
+.box:hover > #e{
+    height: 100%;
+    transform: scaleX(2);
+
+}
+.box:hover > #f{
+    height: 90%;
+    transform: skewX(45deg);
+}
+.box:hover > #g{
+    height: 90%;
+    transform: skewY(30deg);
+}
+
+.box:hover > #h{
+    width: 80%;
+    transform: skewx(80deg);
+}
+@media only screen and (max-width: 800px){
+    .main{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main2{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        margin: 40px;
+        background-color: rgb(206, 119, 13);
+     }
+     .minibox{
+         margin: 10px;
+         height: 50px;
+         width: 50px;
+         background-color: aqua;
+         transition: all 3s;
+     }
+}
